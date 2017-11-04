@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Profile Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+
+ </head>
+  <style>
+  	img {
+  		text-align: center;
+}
+	.button {
+ 	 	padding: 15px 25px;
+ 	 	font-size: 24px;
+ 		text-align: center;
+  		cursor: pointer;
+  		outline: none;
+ 	 	color: #fff;
+ 		background-color: #DB6E7E;
+  		border: none;
+  		border-radius: 15px;
+  		//box-shadow: 0 9px #999;
+}
+
+	.button:hover {
+		background-color: #DB6E7E;
+	}
+
+	.button:active {
+ 		background-color: #DB6E7E;
+  		box-shadow: 0 5px #666;
+  		transform: translateY(4px);
+}
+	p {
+		font-family:fantasy;
+    	line-height: 35px;
+    	font-size: 20px; 
+    	font-weight: bolder;
+    	margin-left: 10%;
+	}
+	@media screen and (max-width: 400px) {
+		h2,img {
+			width: 100% !important;
+			height: 5% !important;
+			text-align: center !important;
+		}
+		.button:last-child {
+			margin-top: 5% !important;
+		}
+	}
+    
+
+  </style>
+  <body background="img.jpg">
+  	<div class="container">
+  	<div class="row" style="text-align: center;">	
+  	<div>
+   	<h2><img src="tenor.gif" style="width:35%;max-height:15%;"></h2>
+   </div>
+
+		<button id="profileBtn" class="button btn btn-primary btn-lg">PROFILE PAGE</button>
+		<button id="feedBtn" class="button btn btn-primary btn-lg">FEED PAGE</button>
+	</div>
+	</br></br>
+
+	<div class="row profile">
+		<div class="col-xs-12 col-sm-12">
+			<p>Name : <span id="myName"></span></p>
+		</div>
+		<div class="col-sm-12">
+			<p>Gender : <span id="myGender"></span></p>
+		</div>
+		<div class="col-sm-12">
+			<p>Birthday : <span id="myBirthday"></span></p>
+		</div>
+		<div class="col-sm-12">
+			<p>Hometown : <span id="myHometown"></span></p>
+		</div>
+		<div class="col-sm-12">
+			<p>Email : <span id="myEmail"></span></p>
+		</div>
+		<div class="col-sm-12">
+			<p>Languages : <span id="myLanguages"></span></p>
+		</div>
+	</div>
+	
+	<div class="row feed">
+		<div class="col-sm-12" style="border-style: solid; border-color: red; margin: 2%;">
+			<p>feed 1 : <span id="feed1"></span></p>
+		</div> 
+		<div class="col-sm-12" style="border-style: solid; border-color: red; margin: 2%;">
+			<p>feed 2 : <span id="feed2"></span></p>
+		</div> 
+		<div class="col-sm-12" style="border-style: solid; border-color: red; margin: 2%;">
+			<p>feed 3 : <span id="feed3"></span></p>
+		</div>
+		<div class="col-sm-12" style="border-style: solid; border-color: red; margin: 2%;">
+			<p>feed 4 : <span id="feed4"></span></p>
+		</div> 
+		<div class="col-sm-12" style="border-style: solid; border-color: red; margin: 2%;">
+			<p>feed 5 : <span id="feed5"></span></p>
+		</div> 
+		<div class="col-sm-12" style="border-style: solid; border-color: red; margin: 2%;">
+			<p>feed 6 : <span id="feed6"></span></p>
+		</div>
+	</div>
+
+  <script type="text/javascript" src="profile.js"></script>
+  <script type="text/javascript" src="feed.js"></script>
+  
+  
+  </body>
+
